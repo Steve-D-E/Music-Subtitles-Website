@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <title>Further Information</title>
+
+    <script>
+        // hover over at bottom of page
+        function mOver(obj) {
+            obj.innerHTML = "Thank You for reading this website!"
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "Hover over me when finished!"
+        }
+        // interactive question and answer request
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // When correct answer is clicked, colour changes to green
+            let correct = document.querySelector('.correct');
+            correct.addEventListener('click', function () {
+                correct.style.backgroundColor = 'green';
+                document.querySelector('#feedback1').innerHTML = 'Correct!';
+            });
+
+            // When incorrect answer clicked, colour changes to red
+            let incorrect = document.querySelectorAll('.incorrect');
+            for (let i = 0; i < incorrect.length; i++) {
+                incorrect[i].addEventListener('click', function () {
+                    incorrect[i].style.backgroundColor = 'red';
+                    document.querySelector('#feedback1').innerHTML = 'Incorrect';
+                });
+            }
+        });
+
+    </script>
+
+<body>
+    <p></p>
+    <a href="index.html" class="button">Home</a>
+    <a href="music1b.html" class="button">1st Subtitled Song</a>
+    <a href="music2b.html" class="button">2nd Subtitled Song</a>
+    <a href="music3b.html" class="button">3rd Subtitled Song</a>
+    <a href="lastpageb.html" class="button">Further Information</a>
+    <p></p>
+    <div class="boxtwo">Further Information</div>
+    <div class="boxthree">
+        <h3><strong>YouTube</strong></h3>
+        <p>On YouTube, you have the opportunity to let their AI speech recognition software auto-caption your videos.
+            The <a href="https://support.google.com/youtube/answer/6373554?hl=en">official tutorial</a> explains how to
+            do this in just a few easy steps.</p>
+        <p>You can add your own .srt subtitles as well. All you need to do is to go to your “Video Manager”. Select the
+            drop-down menu available next to the video file you want to play with subtitles and choose the
+            “Subtitles/CC” option:</p>
+        <p>Next, you will have three options available:
+        <p>
+        <ul>
+            <li>Upload a file</li>
+            <li>Transcribe and auto-sync</li>
+            <li>Create new subtitles</li>
+        </ul>
+        <p>The option we are interested in here is the first one: Upload a new file: Choose your file (a locally saved
+            .srt subtitle) and upload it on YouTube.</p>
+        <p>The problem with using YouTube's native auto-captioning is that it can be very buggy and often doesn't
+            accurately transcribe your video.</p>
+        <p><a href="https://zubtitle.com/">Zubtitle</a> offers one way of adding captions, there are many more.</p>
+        <p><em>The above content (including that below) is taken from the website <a
+                    href="https://zubtitle.com/blog/why-adding-captions-to-your-social-videos-is-an-absolute-must-in-2019">Zubtitle</a>.</em>
+        </p>
+    </div>
+    <br>
+    <!--Accordion flushes-->
+    <div class="boxfour">Other places to add subtitles and captions</div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Facebook
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>The most popular social media channel has a lot to offer besides videos. However, if you decide
+                        that your content strategy will include video, you should know that videos are muted by default
+                        on some devices unless you click on them. In some cases, when your video is embedded on other
+                        websites and pages, you need to manually click on the “volume” button in order to unmute them.
+                    </p>
+                    <p>That's why captions are so important, like in this <a
+                            href="https://www.facebook.com/neilkpatel/posts/10157104753398781">example</a>, especially
+                        when you promote your posts or choose to pay for ads.</p>
+                    <p>Here's <a href="https://unmarketing.com/articles/the-vanity-of-going-viral-on-facebook">another
+                            good example</a> that shows us the importance of captions on Facebook videos.</p>
+                    <p>In this case, <a href="https://www.facebook.com/UnMarketing/videos/10155332058140942/">a video
+                            posted by Scott Stratten</a> went viral and had over 1,300,000 10-second views with muted
+                        sound. “Maybe they were looking at something else in their timeline, while the video played, or
+                        they left to investigate that smell I referred to earlier, but the video is useless without
+                        sound,” he said, referring to those 10-second plays.</p>
+                    <p>What can we learn from this example?</p>
+                    <p>We learn that a lot of people will see your auto-played Facebook videos for just a few seconds,
+                        with muted sound. Thus, in order to catch their attention, you should use captions and text
+                        transcriptions.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Instagram
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>You can share videos with traditional Instagram posts, Instagram Stories, and Instagram Ads as
+                        well. They all start muted on mobile devices and only play with volume once the viewer clicks on
+                        them. It’s a great platform for storytelling but storytelling needs a story in order to be
+                        effective. And a muted video does not communicate a story.</p>
+                    <p>People who browse their timelines, just like on Facebook, don’t always click on all the posts
+                        they browse through.</p>
+                    <p>That's why it's important to gain maximum value from that couple of seconds your audience sees
+                        your content before moving on to another post.</p>
+                    <p>How? Well, just like before, you need subtitles.</p>
+                    <p>Unfortunately, there is no option for adding .srt subtitles on Instagram.</p>
+                    <p>Instead, you’ll have to “burn” your subtitles directly on your video.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    LinkedIn
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>The good news is that, on LinkedIn, you can add subtitles in a similar way that you would for
+                        YouTube and Facebook videos. Here’s an <a
+                            href="https://www.linkedin.com/help/linkedin/answer/a552177/adding-closed-captioning-to-videos-on-linkedin?lang=en">official
+                            tutorial</a>.</p>
+                    <p>At the same time, you can use a hard subbed video as well, especially if you already created one
+                        for Instagram with Zubtitle.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--Question for the viewer-->
+    <div class="boxfour">Can you remember?</div>
+    <br>
+
+    <div class="section">
+        <h5>Which song did <strong>not</strong> show subtitles when there was speaking?</h5>
+        <button class="incorrect">Strange Fruit</button>
+        <button class="incorrect">Enjoy Yourself</button>
+        <button class="correct">Going Underground</button>
+
+        <p id="feedback1"></p>
+    </div>
+    <br> <!-- hover over box -->
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color:red;color:white;font-size:24px;font-weight:bold;width:461px;height:60px;padding:10px;">
+        Hover over me when finished!</div>
+
+    <br>
+    <footer>
+        <p class="end">This website was created by Steve Emery for cs50, 2022</p>
+    </footer>
+</body>
+
+</html>

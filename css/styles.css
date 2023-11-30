@@ -1,0 +1,67 @@
+/* css styles for index? */
+
+body {
+    margin: 35px;
+    background: lightyellow;
+}
+* {
+    text-align: left;
+}
+
+#songheadbox {
+    font-weight: bold;
+    font-size: 40px;
+    background-color: red;
+    color: black;
+    padding: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.boxone {
+    padding-left: 5px;
+    padding-right: 50px;
+}
+
+.boxtwo {
+    background-color: green;
+    border: 2px solid black;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    font-family: "Candara", sans;
+    padding-left: 5px;
+    margin-right: 450px;
+}
+
+.boxthree {
+    margin: 25px;
+    padding-right: 450px;
+ }
+
+.boxfour {
+    background-color: lightblue;
+    border: 2px solid black;
+    margin-right: 450px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+p.end {
+    font-size: 12px;
+    font-style: italic;
+}
+.button {
+    background-color: lightgrey;
+    border: 1.5px solid black;
+    color: black;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
